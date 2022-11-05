@@ -14,3 +14,14 @@
 // Don't count a wall if I don't manage to finish painting all of it before I run out of paint.
 // All walls will have the same dimensions.
 // All numbers will be positive integers.
+function howManyWalls(n , w , h){
+    if((n/w) <1){
+        return 0;
+    }
+    else{
+      let one =   Math.floor(n/w);
+      let two = Math.floor(one/h);
+      return two;
+    }
+}
+console.log(howManyWalls(41, 3, 6));
