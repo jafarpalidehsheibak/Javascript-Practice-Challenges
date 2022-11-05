@@ -12,3 +12,11 @@
 
 // animals(5, 2, 8) ➞ 50
 // animals(chickens, cows, pigs).
+function animals (chickens, cows, pigs){
+    let total = 0;
+    total += chickens*2;
+    total += cows*4;
+    total += pigs*4;
+    return total;
+}
+console.log(animals(5, 2, 8));
